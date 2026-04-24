@@ -1,15 +1,15 @@
 RewriteEngine On
 
-# 1. Redirecionar /index.html para /home (ou para a raiz /)
-RewriteRule ^index\.html$ /home [R=301,L]
-RewriteRule ^home$ index.html [L]
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ / [L,R=301]
 
-# 2. Remover a extensão .html das outras URLs
-# Se o usuário digitar /projetos.html, redireciona para /projetos
-RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R=301]
+RewriteCond %{THE_REQUEST} /projetos\.html [NC]
+RewriteRule ^(.*)projetos\.html$ /projetos [L,R=301]
 
-# Se o usuário acessar /projetos, o servidor serve o arquivo projetos.html internamente
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^projetos$ projetos.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^home$ index.html [L]

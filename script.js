@@ -18,7 +18,7 @@ async function getGitHubRepos() {
         const repos = await response.json();
 
         const path = window.location.pathname;
-        const isMainPage = path.includes("index.html") || path.endsWith("/") || path === "";
+        const isMainPage = !path.includes("projetos");
         const container = document.getElementById("github-cards");
 
         if (!container) return;
