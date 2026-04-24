@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio | Ruben Massuquetto</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html" class="logo-nav">Massuquetto</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#trajetoria">Trajetória</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="cv/cv-ruben-massuquetto.pdf" download class="btn-cv">Download CV</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <span class="status-badge">
+                <span class="dot"></span>
+                Disponível para novos projetos
+            </span>
+            <h1>Ruben Massuquetto</h1>
+            <h2>Desenvolvedor Front-end</h2>
+            <p>
+                Minha trajetória profissional une o rigor técnico do planejamento industrial à visão estratégica da
+                análise de dados aplicada ao desenvolvimento web. Como ex-Coordenador de PCP e Compras, trago para o
+                código a precisão de processos e a busca constante por eficiência produtiva, garantindo a construção de
+                interfaces organizadas, lógicas e escaláveis. Aliando minha formação em Ciência de Dados e MBA em Growth
+                Marketing, transformo requisitos complexos de negócio em soluções digitais de alto impacto, onde a
+                engenharia visual é guiada por uma sólida base analítica voltada para resultados reais.
+            </p>
+        </div>
+
+        <div class="hero-image">
+            <img src="./assets/ruben.massuquetto.png" alt="Foto do Ruben Massuquetto">
+        </div>
+    </section>
+
+    <section id="trajetoria">
+        <h2>Minha Trajetória Profissional</h2>
+        <div class="timeline">
+            <article class="timeline-item">
+                <span class="year">2026</span>
+                <h3>Formação Full Stack — DevClub</h3>
+                <p>Onde consolido o domínio técnico em JavaScript, HTML5 e CSS3. Aqui, transformo requisitos de negócio
+                    complexos em interfaces dinâmicas, priorizando a performance e a experiência do usuário através de
+                    engenharia visual moderna.</p>
+            </article>
+
+            <article class="timeline-item">
+                <span class="year">2025</span>
+                <h3>MBA em Growth Marketing para E-commerce</h3>
+                <p>Foco em experimentação e métricas de alta performance. Esta etapa me deu a visão de negócios
+                    necessária para entender que cada linha de código deve estar alinhada à estratégia de crescimento e
+                    aos KPIs da empresa.</p>
+            </article>
+
+            <article class="timeline-item">
+                <span class="year">2024</span>
+                <h3>Graduação em Ciência de Dados</h3>
+                <p>Desenvolvimento de uma base sólida em lógica e tratamento de grandes volumes de informação. Aprendi a
+                    extrair insights de dados brutos, uma habilidade fundamental para lidar com estados de aplicação e
+                    fluxos de dados complexos no Front-End.</p>
+            </article>
+
+            <article class="timeline-item">
+                <span class="year">2018 — 2026</span>
+                <h3>Liderança em PCP e Operações Industriais</h3>
+                <p>A estruturação de Listas de Materiais (BOM) e o controle de produção foram meus primeiros
+                    "algoritmos" reais. Esta experiência treinou minha mente para organizar hierarquias de dados,
+                    otimizar processos e antecipar gargalos lógicos.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="tecnologias">
+        <h2>Tecnologias</h2>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <img src="./assets/html.png" alt="HTML5">
+                <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+                <img src="./assets/css.png" alt="CSS3">
+                <span>CSS3</span>
+            </div>
+            <div class="tech-item">
+                <img src="./assets/java-script.png" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <img src="./assets/git.png" alt="Git">
+                <span>Git</span>
+            </div>
+            <div class="tech-item">
+                <img src="./assets/github.png" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="section-header">
+            <h2>Meus Projetos</h2>
+            <span class="projetos-subtitle">Explorando soluções através de código e análise de dados</span>
+        </div>
+        <div id="github-cards"></div>
+        <div class="projetos-footer">
+            <a href="projetos.html" class="btn-more">Ver Mais Projetos ↗</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contato-container">
+            <div class="contato-texto">
+                <h2>Vamos conversar?</h2>
+                <p>Sinta-se à vontade para entrar em contato para oportunidades, colaborações ou apenas um bate-papo
+                    sobre tecnologia e dados.</p>
+            </div>
+
+            <form id="contact-form" action="https://formspree.io/f/mvzdkyjg" method="POST">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" name="name" id="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea name="message" id="mensagem" rows="5" placeholder="Como posso ajudar?"
+                        required></textarea>
+                </div>
+
+                <div class="form-group-lgpd">
+                    <p class="lgpd-text">
+                        Ao enviar, você concorda que usarei seus dados apenas para responder ao seu contato, conforme a
+                        LGPD.
+                    </p>
+                </div>
+
+                <button type="submit" class="btn-send" id="form-button">Enviar Mensagem</button>
+
+                <p id="form-status" style="margin-top: 20px; font-weight: 600; text-align: center; min-height: 24px;">
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-glass">
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/ruben-massuquetto/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/rubenmassuquetto1999" target="_blank">GitHub</a>
+                <a href="https://wa.me/5541997775319" target="_blank">WhatsApp</a>
+                <a href="mailto:contato@rubenmassuquetto.com">E-mail</a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>© 2026 Ruben Massuquetto | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <a href="https://wa.me/5541997775319" class="whatsapp-float" target="_blank" aria-label="Fale comigo no WhatsApp">
+        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+</body>
+
+</html>
